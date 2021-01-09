@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+        <div id='teste_audio'>
+            <audio>
+                <source src='./audio.m4a' type='audio/mpeg'>
+            </audio>
+            <div id='temp'>
+                
+            </div>
+            <div id='tempo'>
+                    <h1>0:0</h1>
+            </div>
+            <div id='div_meio'>
+                <div id='nada'>
+
+                </div>
+            </div>
+            <div id='volume'>
+                <button class='butto' onclick='menos_vol()'>
+                    -
+                </button>
+                <div id='volume_todo'>
+
+                </div>
+                <button class='butto' onclick='mais_vol()'>
+                    +
+                </button>     
+            </div>
+            <div id='menu'>
+                <img class='but' onclick = "ligar(this)" src="./imagens/play.png" alt="play">
+                <img class='but' onclick = 'parar()' src="./imagens/stop.png" alt="stop">
+                <img class='but' onclick = 'menos_15()' src="./imagens/volta_15.png" alt="volta">
+                <img class='but' onclick = 'mais_15()' src="./imagens/passa_15.png" alt="passa">
+                <img class='but' onclick = 'menos_velo()' src="./imagens/velo_menos.png" alt="diminui_velo">
+                <img class='but' onclick = 'mais_velo()' src="./imagens/velo_mais.png" alt="aumenta_velo">
+                <img class='but' onclick = 'mudo()' src="./imagens/mudo.png" alt="mudo">
+            </div>
+        </div>
+        <footer>
+            <p>Criado por: Geova Jonnatha <3</p>
+        </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
